@@ -111,6 +111,41 @@ h1 {
   margin-bottom: 1em;
 }
 
+.outer-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.space-bottom {
+  margin-bottom: 4em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+  background-color: #f0eeee;
+}
+
+h3 {
+  font-size: 1.65em;
+  line-height: 1em;
+  margin-bottom: 2em;
+}
+h3, h4 {
+  font-family: namun gothic,Arial,sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-bottom: 1.5em;
+}
+
+
 /*   footer section    */
 
 .footer {
