@@ -59,7 +59,7 @@ a {
 img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 45vh;
   margin-bottom: 2em;
   background-color: #f0eeee;
 }
@@ -71,18 +71,26 @@ img {
   position: absolute;
   top: 48%;
   left: 48%;
-  -webkit-transform: translate(-50%,-10%);
-  -moz-transform: translate(-50%,-10%);
-  -ms-transform: translate(-50%,-10%);
-  -o-transform: translate(-50%,-10%);
   transform: translate(-50%,-10%);
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
   transition: all .25s ease;
   z-index: 3;
 }
-.post-list li a {
-  text-decoration: none;
+.card:hover .overlay-button {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.card:hover .overlay {
+  opacity: 0.8;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 .cta-button {
   border-radius: 5px;
@@ -97,19 +105,11 @@ img {
   transition: all .25s ease;
 }
 a {
-  color: #494c4e;
-  text-decoration: none;
-  margin-bottom: 1.25em;
   font-weight: 700;
 }
-user agent stylesheet
+
 a:-webkit-any-link {
-  color: -webkit-link;
   cursor: pointer;
-  text-decoration: underline;
-}
-ul.no-bullet li {
-  list-style: none;
 }
 
 .arrow-right {
@@ -120,6 +120,17 @@ ul.no-bullet li {
   transition: all .25s ease;
 }
 
+a:hover .arrow-right {
+  transform: translateX(5px);
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+a:hover .arrow-left {
+  transform: translateX(-5px);
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
 .card .overlay {
   opacity: 0;
   position: absolute;
@@ -128,9 +139,6 @@ ul.no-bullet li {
   width: 100%;
   height: 100%;
   z-index: 2;
-}
-.post-list li a {
-  text-decoration: none;
 }
 
 h4 {
